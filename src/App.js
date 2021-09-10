@@ -11,7 +11,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <Menu />
-            <Switch>
+            <Switch> //Esta etiqueta me ayuda a redirigir al usuario a una pagina NotFound en caso de que busque un componente que no tenemos, esta solo acepta Route como elementos hijos
                 <Route exact path="/news/:new_id" component={News} />
                 <Route exact path="/news" component={News} />
                 <Route exact path="/contact">
